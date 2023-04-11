@@ -15,9 +15,13 @@ class TestWordCounter(unittest.TestCase):
         result = wordcounter('Hola mundo')
         self.assertEqual(result, 2)
         
-    def test_wordsAndPunctuation(self):
+    def test_wordsPunctuation(self):
         result = wordcounter('¡Hola, mundo!')
         self.assertEqual(result, 2)
+
+    def test_sentence(self):
+        result = wordcounter('Giganotosaurus carolinii es la única especie conocida del género extinto Giganotosaurus de dinosaurio terópodo carcarodontosáurido.')
+        self.assertEqual(result, 15)
 
 
 if __name__ == '__main__':
