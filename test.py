@@ -1,6 +1,7 @@
 import unittest
 from wordcounter import wordcounter
 
+
 class TestWordCounter(unittest.TestCase):
     
     def test_empty(self):
